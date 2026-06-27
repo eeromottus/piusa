@@ -12,3 +12,6 @@ icacls "C:\ProgramData\ssh\administrators_authorized_keys" /grant "Administrator
 icacls "C:\ProgramData\ssh\administrators_authorized_keys" /grant "SYSTEM:F"
 Restart-Service sshd
 
+Set-ExecutionPolicy Bypass -Scope Process
+
+Get-LocalUser localeero
